@@ -5,7 +5,7 @@ var a = 50;		// amplitude for elastic
 var s = 1.70158;	// overshoot amount for "back"
 
 
-function easeandwizz_outExpo(t, b, c, d) {
+function Ease_outExpo(t, b, c, d) {
 	return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
 }
 
@@ -72,5 +72,5 @@ function easeAndWizz() {
 	}
 }
 
-(easeAndWizz() || value);
+(Ease() || value);
 
