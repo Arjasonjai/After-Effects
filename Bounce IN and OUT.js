@@ -1,4 +1,4 @@
-```javascript
+
 // IN Animation
 
 freq = 2;
@@ -28,4 +28,3 @@ linear(t,0,duration,startVal,endVal);
 amp = (endVal - startVal)/duration;
 w = freq*Math.PI*2;
 endVal + amp*(Math.sin((t-duration)*w)/Math.exp(decay*(t-duration))/w);}
-```
