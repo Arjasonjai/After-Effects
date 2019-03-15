@@ -1,6 +1,3 @@
-// Ease and Wizz 2.0.3 : outExpo : All keyframes
-// Ian Haigh (http://ianhaigh.com/easeandwizz/)
-// Last built: 2012-10-11T16:37:31+11:00
 
 // some defaults
 var p = 0.8;		// period for elastic
