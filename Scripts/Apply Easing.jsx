@@ -1,6 +1,6 @@
 /* To call the function:
    applyEasing(Property, Keyframe Duration, [Ease in Speed Array,Ease in Influence Array], [Ease out Speed Array, 
-   Ease out Influence Array], [Ease in Interpolation Type, Ease out Interpolation Type]);
+   Ease out Influence Array], [Ease in Interpolation Type Array, Ease out Interpolation Type Array]);
 */
 
 function applyEasing(property, keyTimesArray, easeInArray, easeOutArray, keyInterpolationArray) {
