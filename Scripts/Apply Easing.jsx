@@ -1,4 +1,4 @@
-// Apply Easing Starts
+// Apply Easing 
 
 function applyEasing(property, keyTimesArray, easeInArray, easeOutArray, keyInterpolationArray) {
 	var easeIn, easeOut, easeIn0, easeOut0, easeIn1, easeOut1, easeIn2, easeOut2;
@@ -30,4 +30,3 @@ function applyEasing(property, keyTimesArray, easeInArray, easeOutArray, keyInte
 	}
 }
 
-// Apply Easing Ends
