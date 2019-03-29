@@ -1,4 +1,4 @@
-// IMPORTANT: This only works when in time remap mode!!
+// IMPORTANT: This only works in time remap mode!!
 // How to use : YouTube video coming soon...
 
 T = thisLayer;
