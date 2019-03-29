@@ -1,3 +1,8 @@
+// This script is not written by me
+// Creator: https://blob.pureandapplied.com.au/effects-o-clean/
+// I put this here just for my own purpose 
+// I may create a UI for this in the future
+
 if (app.project.activeItem){
     var theLayers = [];
     theLayers = app.project.activeItem.selectedLayers;
