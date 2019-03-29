@@ -32,4 +32,4 @@ function applyEasing(property, keyTimesArray, easeInArray, easeOutArray, keyInte
 		property.setInterpolationTypeAtKey(i+1, keyInterpolationArray[0][i], keyInterpolationArray[1][i]);
 	}
 }
-
+ 
