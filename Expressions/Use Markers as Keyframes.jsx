@@ -1,4 +1,5 @@
-// IMPORTANT: It only works when there are two keyframes!!!
+// IMPORTANT: This only works when in time remap mode!!
+// How to use : YouTube video coming soon...
 
 T = thisLayer;
 if ((T.marker.numKeys > 1 ) && (numKeys > 3)){
