@@ -14,7 +14,7 @@
       var groupTwo = win.add("group", undefined, "GroupTwo");
       groupTwo.orientation = "row";
 
-      var dd = groupTwo.add("dropdownlist", undefined, ["Blur In", "Big Bounce", "Animationizer", "IN and OUT"]);  
+      var dd = groupTwo.add("dropdownlist", undefined, ["Blur In", "Big Bounce", "Bounce 1", "Animationizer", "IN and OUT"]);  
 			dd.selection = 0;
       groupTwo.add("statictext", undefined, "Text Preset");
 
@@ -35,9 +35,11 @@
                 main('Bouncing_texts.ffx', myEditText); // FINAL FUNCTION!!!
               } else if (dd.selection == 1){
                 main('Big bounce.ffx', myEditText);
-              } else if (dd.selection == 2) {
+              } else if (dd.selection == 2){
+                main('Bounce Text Preset IN - 228.ffx', myEditText);
+              } else if (dd.selection == 3) {
                 main('Animationizer.ffx', myEditText);
-              } else if (dd.selection == 3){
+              } else if (dd.selection == 4){
                 main('IN OUT text animation.ffx', myEditText);
               }
               else {
@@ -66,10 +68,7 @@ var main = function(myFX, myEditText) {
   
   var proj = app.project;
   var folder = new Folder('C:/Program Files/Adobe/Adobe After Effects CC 2019/Support Files/Presets/User Presets/' + myFX);
-  if (folder.exists !== true) {
-    alert('Preset file does not exist');
-    return;
-  }
+  var folder1 = new Folder('C:/Program Files/Adobe/Adobe After Effects CC 2019/Support Files/Presets/500 Bounce Text Presets/IN/' + myFX);
   
   app.beginUndoGroup('apply preset');
 
@@ -79,12 +78,16 @@ var main = function(myFX, myEditText) {
       var myTextDocument = myTextSource.value;
     
     // var item = proj.activeItem;
-
-    myTextLayer.applyPreset(folder);
-    myTextSource.setValue(myTextDocument);
-
+    if (folder.exists !== false) {
+      myTextLayer.applyPreset(folder);
+      myTextSource.setValue(myTextDocument);
+    } else if (folder1.exists !== false) {
+      myTextLayer.applyPreset(folder1);
+      myTextSource.setValue(myTextDocument);
+    }
   app.endUndoGroup();
   // return 0;
+  
 };
 // Function "Apply presets" Ends //
 
